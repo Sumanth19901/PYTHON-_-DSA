@@ -22,7 +22,13 @@ n=int(input("Enter a value: "))
 even(n)'''
 
 
-## 3.Tail
-## 4.Head
-## 5.Tree
-## 6.Nest
+## 3.Tail Recursion
+## 4.Head Recursion
+## 5.Tree Recursion fibonacci number
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n - 1) + fib(n - 2)
+n=int(input("Enter a value: "))
+print(fib(n))
+## 6.Nested Recursion
