@@ -23,12 +23,38 @@ even(n)'''
 
 
 ## 3.Tail Recursion
+'''def tail(n):
+    if n == 0:
+        return
+    print(n, end=" ")
+    tail(n - 1)
+print("Enter a value: ")
+n=int(input())
+tail(n)'''
+
 ## 4.Head Recursion
+'''def head(n):
+    if n == 0:
+        return
+    head(n - 1)
+    print(n, end=" ")
+print("Enter a value: ")
+n=int(input())
+head(n)'''
+
 ## 5.Tree Recursion fibonacci number
-def fib(n):
+'''def fib(n):
     if n <= 1:
         return n
     return fib(n - 1) + fib(n - 2)
 n=int(input("Enter a value: "))
-print(fib(n))
+print(fib(n))'''
+
 ## 6.Nested Recursion
+def nested(n):
+    if n > 100:
+        return n - 10
+    return nested(nested(n + 11))
+print("Enter a value: ")
+n=int(input())
+print(nested(n))
