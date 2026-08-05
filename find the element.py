@@ -22,6 +22,5 @@ for i in range(n):
     if arr[i]==target:
         print(target,"found at index",i)
         found=True
-        break
 if not found:
     print("target value is not present in the array")
